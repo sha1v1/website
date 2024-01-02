@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.Navbar{
+    padding: 20px 50px;
+}
+
+.navLinks{
+    display: flex;
+    justify-content:flex-start;
+    gap : 20px; 
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.name{
+    font-family: VT323, monospace;
+    font-size: 1.25rem;  
+} 
+
