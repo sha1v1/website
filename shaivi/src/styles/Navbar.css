@@ -2,23 +2,32 @@
 
 .Navbar{
     padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navLinks{
     display: flex;
     justify-content:flex-start;
     gap : 20px; 
-    
-    
+    font-size: 1.5rem;
 }
 
 a{
     text-decoration: none;
 }
 
+a:visited{
+    color: #C3073F;
+}
+
 
 .name{
     font-family: VT323, monospace;
-    font-size: 1.25rem;  
+    font-size: 1.70rem;  
 } 
+
+img:hover{
+    box-shadow: #C3073F;
+}
 
