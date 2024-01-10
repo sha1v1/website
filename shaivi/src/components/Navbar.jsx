@@ -1,5 +1,6 @@
 import '../styles/Navbar.css';
-import linkedinImage from  '/assets/linkedin-onSelect.svg';
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 function Navbar(){
@@ -14,7 +15,10 @@ function Navbar(){
             </div>
 
             <div className="socials">
-                <img className="social-icons" src={linkedinImage} alt="LinkedIn account hyperlink" />
+                <a href="www.linkedin.com/in/shaivi-gandhi"><FaLinkedin className="social-links" /></a>
+                <a href="https://github.com/sha1v1"><FaGithub className="social-links"/></a>
+             
+
             </div>
         </nav>
 

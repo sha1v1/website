@@ -1,0 +1,30 @@
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.intro{
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.first-name{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.last-name{
+    padding-top: 30px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.intro{
+    font-size: 4rem;
+    padding: 30px 50px;
+}
