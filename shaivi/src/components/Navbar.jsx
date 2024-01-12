@@ -8,7 +8,7 @@ function Navbar(){
         <>
         <nav className="Navbar">
             <div className="navLinks">
-                <a href="#home" className="name" >Shaivi</a>
+                <a href="#home" className="navbar-name" >Shaivi</a>
                 <a href="#About" > About</a>
                 <a href="#Experience" > Experience</a>
                 <a href="#Projects" > Projects</a>

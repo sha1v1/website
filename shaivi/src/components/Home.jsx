@@ -1,31 +1,37 @@
 import '../styles/Home.css';
+import { useEffect, useState } from 'react';
 
 function Home(){
-    return(
-        <div className='home-container'>
-            <div className="intro">
-                <div className="first-name">
-                    <div>S</div>
-                    <div>H</div>
-                    <div>A</div>
-                    <div>I</div>
-                    <div>V</div>
-                    <div>I</div>
-                </div>
-                <div className="last-name">
-                    <div>G</div>
-                    <div>A</div>
-                    <div>N</div>
-                    <div>D</div>
-                    <div>H</div>
-                    <div>I</div>
-                </div>
-            </div>
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-            <div className='three-js'>
-                three js here
-            </div>
-        </div>
+    const[myName, setMyName] = useState("SHAIVI GANDHI");  
+    const[numRenders, setNumRenders] = useState(0);
+
+    useEffect(() => {
+      const name = "SHAIVI GANDHI";
+      const interval1 = setInterval(() => {
+        if (numRenders <= 13) {
+
+            const newF = myName.split("").map((l,i) => {
+                if(i < numRenders){
+                    return name[i];
+                }
+                return letters[Math.floor(Math.random() * 26)];
+
+            }).join("");
+
+            setMyName(newF);
+      
+            setNumRenders(prevFRenders => prevFRenders + 1);
+          }
+      }, 70)
+      return  () => clearInterval(interval1);
+    }, [numRenders]);
+    
+    return(
+        <div className='home-container'>              
+            <h1 renders = {numRenders} className='name'>{myName}</h1>         
+       </div>
     );
 }
 

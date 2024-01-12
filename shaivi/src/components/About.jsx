@@ -6,7 +6,7 @@ function About(){
             <h1>About me</h1>
             <section>I am a second year computer science student at <a href="https://www.dal.ca/">Dalhousie University</a>. 
             I am interested in Web and App development and Cybersecurity. Currently, I'm learning Node.js and playing around with
-            React.js (this website, lol). Here's some of the technologies I'm familiar with: 
+            React.js. Here's some of the technologies I'm familiar with: 
             </section>
 
             <ul>

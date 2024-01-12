@@ -44,7 +44,7 @@ function Experience() {
         {exp.map((item, i) => (
           <li key={i}>
 
-            <h3>{exp[i].role}</h3>
+            <h3>{item.role}</h3>
 
             <h5 className="spaced-heading">
               {exp[i].place} {exp[i].period}

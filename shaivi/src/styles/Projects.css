@@ -1,0 +1,21 @@
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;  
+    padding-top: 20px;
+}
+
+.card{
+    border: solid black 1px;
+    padding: 20px 10px;
+    border-radius: 5%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s;
+    cursor: crosshair;   
+}
+
+
