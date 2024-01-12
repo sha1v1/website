@@ -5,15 +5,14 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
-  /* --primary-bg: #1A1A1D;
-  --primary-font:#C3073F; */
-
-
-
+  --primary-bg: rgb(20,20,20);
+  --primary-font:#cecece;
 
 }
 
 body{
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.1em;
   margin: 0;
   padding: 0;
   height: 100vh;

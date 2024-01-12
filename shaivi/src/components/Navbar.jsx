@@ -1,6 +1,8 @@
 import '../styles/Navbar.css';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { useEffect, useState } from 'react';
+import {Link} from 'react-scroll';
 
 
 function Navbar(){
@@ -8,10 +10,30 @@ function Navbar(){
         <>
         <nav className="Navbar">
             <div className="navLinks">
-                <a href="#home" className="navbar-name" >Shaivi</a>
-                <a href="#About" > About</a>
-                <a href="#Experience" > Experience</a>
-                <a href="#Projects" > Projects</a>
+                <Link to="test1" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+       className="navbar-name" >Shaivi</Link>
+                <Link to="About" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      > About</Link>
+                <Link to="Experience" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      > Experience</Link>
+                <Link to="Projects" 
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      > Projects</Link>
             </div>
 
             <div className="socials">

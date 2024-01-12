@@ -22,7 +22,7 @@ function Projects(){
     ];
 
     return(
-        <div className="project-container">
+        <div className="project-container" id="Projects">
             <h1>Projects</h1>  
             <div className='cards-container'>
                 {

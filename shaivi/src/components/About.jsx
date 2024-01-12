@@ -2,7 +2,7 @@ import '../styles/About.css';
 
 function About(){
     return(
-        <div className="about-container">
+        <div className="about-container" id="About">
             <h1>About me</h1>
             <section>I am a second year computer science student at <a href="https://www.dal.ca/">Dalhousie University</a>. 
             I am interested in Web and App development and Cybersecurity. Currently, I'm learning Node.js and playing around with
