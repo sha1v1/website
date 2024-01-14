@@ -55,10 +55,10 @@ function Navbar() {
         </div>
 
         <div className="socials">
-          <a href="www.linkedin.com/in/shaivi-gandhi">
+          <a target="_blank" href="www.linkedin.com/in/shaivi-gandhi">
             <FaLinkedin className="social-links" />
           </a>
-          <a href="https://github.com/sha1v1">
+          <a target="_blank" href="https://github.com/sha1v1">
             <FaGithub className="social-links" />
           </a>
         </div>

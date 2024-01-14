@@ -25,9 +25,9 @@ export default function Typer({ text }) {
           })
           .join("");
 
-        counter++; 
+        counter+= 1/2; 
         setText(newText);
-      }, 50);
+      }, 30);
 
       return () => clearInterval(intervalId);
     }

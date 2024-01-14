@@ -30,7 +30,8 @@ function Home(){
     
     return(
         <div className='home-container' id="Home">              
-            <h1 renders = {numRenders} className='name'>{myName}</h1>         
+            <h1 renders = {numRenders} className='name'>{myName}</h1>   
+            <button className='mail-button'><a href="mailto:shaivigandhi@yahoo.com">Send a Message </a></button>      
        </div>
     );
 }

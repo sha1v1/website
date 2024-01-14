@@ -15,7 +15,7 @@ function Projects(){
         {
             name: "Galactic Getaways: NASA Space Apps Challenge 2023",
             desc: "A high-fidelity prototype of a tool that has itenararies for space-travel and information regarding celestical objects",
-            git: "", //to be added
+            git: "https://www.figma.com/proto/Lx9jgApYoQGPkyZYMLMyM9/Space-Tourism?type=design&node-id=3-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A2", //to be added
             build: "Figma",
             image: "" //to be added
         }
@@ -32,7 +32,7 @@ function Projects(){
                             <Card.Title className='title'>{p.name}</Card.Title>
                             <Card.Subtitle className="subtitle">{p.build}</Card.Subtitle>
                             <Card.Text className="description"> {p.desc}</Card.Text>
-                            <Card.Link href={p.git} className="link">git</Card.Link>
+                            <Card.Link href={p.git} target="_blank" className="link">git</Card.Link>
                         </Card.Body>
                     </Card>
                 ))

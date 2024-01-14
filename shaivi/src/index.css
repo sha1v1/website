@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,5 +17,6 @@ body{
   height: 100vh;
   background-color: var(--primary-bg);
   color: var(--primary-font);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
