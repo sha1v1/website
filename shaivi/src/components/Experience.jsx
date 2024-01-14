@@ -42,6 +42,7 @@ function Experience() {
       <ul className="exp-list" >
 
         {exp.map((item, i) => (
+          
           <li key={i}>
 
             <h3>{item.role}</h3>
@@ -51,11 +52,12 @@ function Experience() {
             </h5>
 
             <ul className="desc-list">
-              {exp[i].desc.map((d) => (
-                <li>{d}</li>
+              {exp[i].desc.map((d, j) => (
+                <li>{exp[i].desc[j]}</li>
               ))}
             </ul>
           </li>
+        
         ))}
       </ul>
     </div>

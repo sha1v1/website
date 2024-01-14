@@ -5,13 +5,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
-  --primary-bg: rgb(20,20,20);
+  --primary-bg: #1A1A1D;
   --primary-font:#cecece;
 
 }
 
 body{
-  font-family: 'Courier New', Courier, monospace;
+  
   letter-spacing: 0.1em;
   margin: 0;
   padding: 0;
