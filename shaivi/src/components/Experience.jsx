@@ -53,7 +53,7 @@ function Experience() {
 
             <ul className="desc-list">
               {exp[i].desc.map((d, j) => (
-                <li>{exp[i].desc[j]}</li>
+                <li key={j}>{d}</li>
               ))}
             </ul>
           </li>
