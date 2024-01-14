@@ -2,7 +2,7 @@ import '../styles/Home.css';
 import { useEffect, useState } from 'react';
 
 function Home(){
-    const characters = "A1B2C3D4E5F6G7H8I9J0K!L@M#N$O%P^Q&R*S<T?U>V/WXYZ";
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     const[myName, setMyName] = useState("SHAIVI GANDHI");  
     const[numRenders, setNumRenders] = useState(0);
@@ -16,7 +16,7 @@ function Home(){
                 if(i < numRenders){
                     return name[i];
                 }
-                return characters[Math.floor(Math.random() * 48)];
+                return characters[Math.floor(Math.random() * 26)];
 
             }).join("");
 

@@ -27,7 +27,7 @@ function Projects(){
             <div className='cards-container'>
                 {
                 projs.map((p, i) => (
-                    <Card style={{ width: '300px', height: '300px' }} class="card">
+                    <Card key={i} style={{ width: '300px', height: '300px' }} className="card">
                         <Card.Body>
                             <Card.Title className='title'>{p.name}</Card.Title>
                             <Card.Subtitle className="subtitle">{p.build}</Card.Subtitle>

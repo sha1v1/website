@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 export default function Typer({ text }) {
-  const characters = "A1B2C3D4E5F6G7H8I9J0K!L@M#N$O%P^Q&R*S<T?U>V/WXYZ";
+  const characters = "ABCDEFGHIJKLMOPQRSTUVWXYZ";
 
   const [displaytext, setText] = useState(text);
-  const [isHover, setIsHover] = useState(false);
+  const [isHovering, setIsHover] = useState(false);
 
   useEffect(() => {
     
-    if (isHover) {
+    if (isHovering) {
 
       let newText = "";
       let counter = 0;
@@ -21,7 +21,7 @@ export default function Typer({ text }) {
             if (i < counter) {
               return text[i];
             }
-            return characters[Math.floor(Math.random() * 48)];
+            return characters[Math.floor(Math.random() * 26)];
           })
           .join("");
 
@@ -31,18 +31,21 @@ export default function Typer({ text }) {
 
       return () => clearInterval(intervalId);
     }
-  }, [isHover]);
+  }, [isHovering]);
 
   return (
-    <div
-      isHover={false}
+    
+    <span style={{display: "inline-block"}}
+      isHovering={false}
       onMouseOver={() => setIsHover(true)}
       onMouseLeave={() => {
         setText(text);
         setIsHover(false);
       }}
+      
     >
       {displaytext}
-    </div>
+    </span>
+    
   );
 }
