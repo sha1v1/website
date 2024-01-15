@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import "../styles/Experience.css";
+
 
 function Experience() {
   const exp = [
     {
-      role: "ADCS Lead",
+      role: "ADCS Member",
       place: "Dalhousie Space Systems",
       period: "Jan 2024 - present",
       desc: [
@@ -37,23 +39,25 @@ function Experience() {
   return (
     <div className="experience-container" id="Experience">
 
-      <h2>Experience</h2>
+      <h1>Experience/</h1>
 
       <ul className="exp-list" >
 
         {exp.map((item, i) => (
-          
-          <li key={i}>
+         
+          <li key={i} className="exp-item">
 
-            <h3>{item.role}</h3>
+            <h3 className="exp-heading">{item.role}</h3>
 
             <h5 className="spaced-heading">
-              {exp[i].place} {exp[i].period}
+              <span>{exp[i].place}</span><span> {exp[i].period}</span>
             </h5>
 
             <ul className="desc-list">
               {exp[i].desc.map((d, j) => (
-                <li key={j}>{d}</li>
+                
+                <li key={j} className="desc-item">{d}</li>
+                
               ))}
             </ul>
           </li>

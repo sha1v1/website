@@ -1,4 +1,28 @@
-li{
-    list-style: circle;
+.about-container{
+    padding: 20px 250px;
+}
+
+
+.tech-list-item{
+    list-style-type: circle;
+    list-style:inside;
+}
+
+.familiar-techs{
+    display: flex;
+    flex-direction: column;
+    width:350px;
+    flex-wrap: wrap;
+    height: 80px;
+    
     
 }
+
+h1{
+    color: var(--medium-bright-pink);
+}
+
+.about-info{
+    color: var(--primary-content);
+}
+

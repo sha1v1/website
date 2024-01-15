@@ -1,5 +1,8 @@
 import '../styles/Home.css';
 import { useEffect, useState } from 'react';
+import Typer from "./Typer";
+import BlinkingCursor from './BlinkingCursor';
+
 
 function Home(){
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -14,6 +17,7 @@ function Home(){
 
             const newF = myName.split("").map((l,i) => {
                 if(i < numRenders){
+                    
                     return name[i];
                 }
                 return characters[Math.floor(Math.random() * 26)];
@@ -29,9 +33,17 @@ function Home(){
     }, [numRenders]);
     
     return(
-        <div className='home-container' id="Home">              
-            <h1 renders = {numRenders} className='name'>{myName}</h1>   
-            <button className='mail-button'><a href="mailto:shaivigandhi@yahoo.com">Send a Message </a></button>      
+        <div className='home-container' id="Home"> 
+
+            <h2 className='intro'>Hi, I'm</h2>          
+            <h1 renders = {numRenders} className='name'>{myName}<BlinkingCursor/></h1>
+
+            <button className='mail-button'>
+                <a href="mailto:shaivigandhi@yahoo.com">
+                Say Hi 
+                </a>
+            </button>  
+                    
        </div>
     );
 }

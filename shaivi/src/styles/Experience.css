@@ -1,0 +1,43 @@
+.experience-container{
+    padding: 20px 250px;
+}
+.spaced-heading{
+    margin-top: 0px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    color: var(--brightest-pink);
+    
+}
+
+.exp-heading{
+    margin-bottom: 10px;
+    color: var(--low-bright-pink);
+}
+
+.exp-item{
+    font-size: 1.3em;
+    font-style: bold !important;
+    list-style: decimal;
+    color: #950740;
+}
+
+.exp-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.desc-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+.desc-item{
+    width: 900px;   
+    font-size: initial;
+    color: var(--primary-text);
+}

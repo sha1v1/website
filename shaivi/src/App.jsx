@@ -4,12 +4,13 @@ import viteLogo from '/vite.svg'
 import Card from 'react-bootstrap/Card';
 import './App.css'
 import Navbar from './components/Navbar';
-import ScrollIcon from './components/ScrollIcon';
 import Home from './components/Home';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Typer from './components/Typer';
+import Copyright from './components/Copyright';
+//import AnimatedCursor from "react-animated-cursor";
 
 
 
@@ -18,12 +19,14 @@ function App() {
 
   return (
     <div className='container'>
+    
+
       <Navbar />
-     
       <Home />
       <About />
       <Experience />
       <Projects />
+      <Copyright />
     </div>
   )
 }

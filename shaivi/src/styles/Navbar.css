@@ -1,28 +1,36 @@
 .Navbar{
-    padding: 20px 50px;
+    padding: 20px 120px;
     display: flex;
     justify-content: space-between;
+    width: 1260px;
+    z-index: 1;
+    background-color: var(--primary-bg);
+    position: fixed;
+   
+}
+.hover-fill{
+    transition: 1s;
+}
+
+.hover-fill:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary-bg);
+    box-shadow: inset 10rem 0 0 0 var(--low-bright-pink);
 }
 .page-link{
     overflow:inherit;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
-    min-width: 90px;
-    
+    min-width: 100px;  
+    color:var(--medium-bright-pink); 
 }
-.page-link:hover{
-    text-decoration: none;
-    cursor: pointer;
-}
-
 
 .navLinks{
     display: flex;    
-    
     width: 600px;
-    gap: 90px;
-    
+    gap: 90px; 
 }
 
 a{   
@@ -32,15 +40,18 @@ a{
 
 
 .social-links{
-    font-size: 1.5rem; 
-    
+    font-size: 1.5rem;
+  
+}
+.social-links:hover{
+    color: var(--brightest-pink) !important;
+    box-shadow: 0px 0px 25px 1px var(--brightest-pink);
+    border-radius: 50%;
 }
 
 .socials{
     display: flex;
     gap: 30px;
-    
-
 }
 
 

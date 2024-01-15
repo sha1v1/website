@@ -1,3 +1,54 @@
+.home-container{
+    padding-top: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 100px;
+    
+}
+ 
+
 .name{
-    font-size: 4rem;;
+    font-size: 4rem;
+    padding-bottom: 30px;
+    color: #C3073F;
+    
+}
+
+.intro{
+    font-size: 3rem;
+    color: var(--lightest-pink);
+}
+
+.mail-button{
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    background: none;
+    border: var(--medium-bright-pink) 1px solid;
+    border-radius: 5%;
+    
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.mail-button:hover{
+    box-shadow:  0 0 10px 5px var(--medium-bright-pink);
+    
+}
+
+.mail-button  a{
+    color: var(--medium-bright-pink);
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    font-family: inherit;
+
+}
+
+
+
+.name{
+    /* position: relative;
+    left: 70px; */
+    
 }

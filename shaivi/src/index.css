@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -6,8 +6,14 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
-  --primary-bg: #1A1A1D;
-  --primary-font:#cecece;
+  --primary-bg: #d9d8d8;
+  --brightest-pink:  #db0b5e;
+  --medium-bright-pink: #C3073F;
+  --low-bright-pink: #9e2354;
+  --lightest-pink: #c0476c;
+  --primary-text: #1a1a1d;
+  --secondary-text: #4e4e50;
+  --card-bg:rgb(193, 193, 193)8;
 
 }
 
@@ -16,7 +22,6 @@ body{
   padding: 0;
   height: 100vh;
   background-color: var(--primary-bg);
-  color: var(--primary-font);
   font-family: 'IBM Plex Mono', monospace;
 }
 
